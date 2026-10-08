@@ -28,34 +28,6 @@ src/lib/storage.ts           Sparat läge (JSON i dokumentmappen) och kopierade 
 src/lib/types.ts, order.ts, theme.ts
 ```
 
-## Köra appen under utveckling
-
-Appen använder inbyggda moduler som inte finns i Expo Go, så den behöver en **development build**.
-
-```bash
-npm install
-npx expo run:ios --device      # kräver Xcode, iPaden ansluten med kabel
-# eller i molnet utan Xcode:
-npx eas-cli@latest build --profile development --platform ios
-npx expo start
-```
-
-```bash
-npm run typecheck
-npm run lint
-```
-
-## Publicera på App Store
-
-1. Byt `ios.bundleIdentifier` i `app.json` (`com.liendea.slideshow`) om du vill ha ett annat id. Det kan inte ändras efter första uppladdningen till App Store Connect.
-2. Byt ut `assets/icon.png` (1024×1024, utan genomskinlighet) mot en riktig ikon.
-3. Bygg och skicka in:
-   ```bash
-   npx eas-cli@latest build --platform ios --profile production
-   npx eas-cli@latest submit --platform ios
-   ```
-4. I App Store Connect: appen är bara för iPad (`isTabletOnly`), så det räcker med iPad-skärmdumpar. Du behöver ändå en URL till en integritetspolicy. Ange att appen inte samlar in någon data.
-
 ## Tips för receptionen
 
 Slå på **Guidad åtkomst** (på en engelskspråkig iPad: Settings → Accessibility → Guided Access). Trippelklicka sedan på topp- eller hemknappen när bildspelet är igång. Då går det inte att lämna appen, och iPaden kan inte låsas av misstag.
@@ -64,3 +36,8 @@ Slå på **Guidad åtkomst** (på en engelskspråkig iPad: Settings → Accessib
 
 - Albumlistan visar egna album på toppnivå. Album som ligger i album-mappar, delade album och smarta album (till exempel Favoriter) visas inte. Enskilda bilder från dem kan väljas med "+ Photos".
 - När man lägger till en hel mapp från iCloud Drive hoppas filer som inte är nedladdade till iPaden över, och appen säger hur många det gäller. Välj "Download Now" på mappen i Filer-appen först, eller välj bilderna med "+ Files / iCloud Drive", som laddar ner dem automatiskt.
+
+## Contact
+
+Linda Bengtsson
+Bengtsson-linda@outlook.com
