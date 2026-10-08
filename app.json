@@ -10,7 +10,7 @@
     "ios": {
       "supportsTablet": true,
       "isTabletOnly": true,
-      "bundleIdentifier": "se.gwstudios.bildspel",
+      "bundleIdentifier": "com.liendea.slideshow",
       "infoPlist": {
         "ITSAppUsesNonExemptEncryption": false
       }
@@ -18,9 +18,9 @@
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#0F0F11",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundImage": "./assets/splash-icon.png",
+        "monochromeImage": "./assets/splash-icon.png"
       },
       "predictiveBackGestureEnabled": false
     },

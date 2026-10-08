@@ -47,7 +47,7 @@ npm run lint
 
 ## Publicera på App Store
 
-1. Byt `ios.bundleIdentifier` i `app.json` (nu `se.gwstudios.bildspel`, byt gärna till t.ex. `….slideshow`) till ett id som tillhör ditt utvecklarkonto.
+1. Byt `ios.bundleIdentifier` i `app.json` (`com.liendea.slideshow`) om du vill ha ett annat id. Det kan inte ändras efter första uppladdningen till App Store Connect.
 2. Byt ut `assets/icon.png` (1024×1024, utan genomskinlighet) mot en riktig ikon.
 3. Bygg och skicka in:
    ```bash

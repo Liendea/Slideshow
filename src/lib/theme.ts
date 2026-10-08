@@ -5,7 +5,7 @@ export const colors = {
   border: "#33333A",
   text: "#F4F2EE",
   textMuted: "#9C9AA3",
-  accent: "#3cf583",
+  accent: "#03ECA2",
   accentText: "#1A1306",
   danger: "#FF6B5E",
 } as const;
